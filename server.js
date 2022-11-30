@@ -9,6 +9,10 @@ const app = express();
 // Middleware
 
 
+function findById(id, animalsArray) {
+    const result = animalsArray.filter(animal => animals.id === id)[0];
+    return result;
+}
 
 //
 function filterByQuery(query, animalsArray) {
@@ -49,7 +53,12 @@ function filterByQuery(query, animalsArray) {
         filteredResults = filteredResults.filter(animal => animal.name === query.name);
     }
     return filteredResults;
-}
+};
+
+app.get('/api/animals/:id', (req, res) => {
+    const result = findById(req.params.id, animals);
+    res.json(result);
+});
 
 // API routes
 app.get('/api/animals', (req, res) => {
