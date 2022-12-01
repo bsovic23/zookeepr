@@ -13,10 +13,8 @@ an individual to enter or search animals, as well as zookeepers.
 
 ## Link To Depoloyed Application
 
-You can access the static application at:
-
-
 You can view the full application at:
+https://britsovic-zookeepr.herokuapp.com/
 
 
 ## Future Work
@@ -24,4 +22,9 @@ You can view the full application at:
 The possibility of adding more information to the animal database would be one thing to add in the future
 
 ## Screenshots
+![Alt text](./public/assets/pictures/zookeepr-home.PNG)
+
+![Alt text](./public/assets/pictures/zookeepr-animals.PNG)
+
+![Alt text](./public/assets/pictures/zookeepr-zookeepers.PNG)
 
